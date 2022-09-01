@@ -18,7 +18,13 @@
     color: var(--main-text-color);
     margin: auto;  
     margin-bottom: 30px;
-    font-style: normal;
+    font-style: normal; 
+    max-width: 430px;
+}
+@media screen and (min-width: 768px) {
+    .hero__title {
+        width: 430px;
+    } 
 }
 .hero__btn {
     @include font (700, 16, 1.87, 0.06);
