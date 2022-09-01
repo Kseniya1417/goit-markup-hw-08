@@ -55,7 +55,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -225,22 +224,23 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
+  height: 400px;
   margin: 0 auto;
+  padding: 118px 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: var(--main-text-color);
-  width: 696px;
   margin: auto;
-  padding: auto;
 }
 
 .hero__btn {
