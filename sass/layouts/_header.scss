@@ -1,0 +1,73 @@
+.navigation {
+    display: flex;
+}
+
+.navigation .navigation__logo {
+    @include font (700, 26, 1.19, 0.03);
+    font-family: 'Raleway', sans-serif;
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+    color: var(--third-color);
+    align-self: center;
+    padding: 24px 0;
+    align-items: center;
+}
+.navigation__logo {
+    display: inline-block;
+}
+.navigation .span__logo {
+    @include font (700, 26, 1.19, 0.03);
+    font-family: 'Raleway', sans-serif;
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+    color: var(--logo-color);
+}
+.navigation__link {
+    @include font (500, 14, 1.14, 0.02);
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.02em;
+    color: var(--first-color);
+    display: block;
+    padding: 32px 0;
+    transition-property: color;
+}
+ .navigation__list {
+     gap: 50px;
+     display: flex;
+     margin-left: 93px;
+ }
+ .navigation__link:hover,
+ .current-page,
+ .navigation__link:focus {
+     color: var(--third-color);
+ }
+  .active::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 4px;
+      left: 0;
+      border-radius: 2px;
+      bottom: -1.5px;
+      background-color: var(--third-color);
+}
+.active {
+       position: relative;
+}
+.contacts__icon-envelope {
+     margin-right: 10px;
+     fill: currentColor;
+}
+.contacts__icon-telephone {
+     margin-right: 10px;
+     fill: currentColor;
+}
+.contacts__list{
+    padding: 32px 0;
+}

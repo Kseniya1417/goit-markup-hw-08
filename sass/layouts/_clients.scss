@@ -1,0 +1,46 @@
+.client {
+    padding: 94px 0;
+}
+.client__title {
+    @include font (700, 36, 1.67, 0.03);
+    font-family: 'Roboto';
+    font-style: normal;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.67;
+    // letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.client__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.client__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-basic-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition-property: border-color;
+    &:hover,
+        &:focus {
+            border: 1px solid var(--third-color);
+        }
+        &:hover .client__page,
+        &:focus .client__page,
+       {
+    fill: var(--third-color);
+}
+}
+.client__item {
+    .client__page,
+     {
+    fill: var(--border-basic-color);
+    transition-property: fill;
+}
+}

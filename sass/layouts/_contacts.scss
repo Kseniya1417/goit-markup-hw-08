@@ -1,0 +1,27 @@
+.contacts__list {
+    display: flex;
+    gap: 50px;
+    margin-right: 0;
+    align-items: center;
+}
+.contacts__tel,
+.contacts__post {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    // padding: 32px 0;
+    color: var(--second-color);
+    align-items: center;
+    transition-property: color;
+}
+.contacts__post:hover,
+.contacts__post:focus,
+.contacts__tel:hover,
+.contacts__tel:focus {
+    color: var(--third-color);
+}
+// .contacts__post::before {
+//     background-image: url("../images/envelop.svg");
+//     background-size: 20px;
+// }
