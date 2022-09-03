@@ -2,11 +2,21 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
+    @include mobile {
+            max-width: 480px;
+        }
+        @include tablet {
+            max-width: 768px;
+        }
+        @include desktop {
+            max-width: 1200px;
+        }
 }
-.container-flex {
+.container__flex {
     display: flex;
     justify-content: space-between;
 }
  .container-border {
      border-bottom: 1px solid #ECECEC;
- }
+ }@include desktop
