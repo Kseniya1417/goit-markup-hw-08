@@ -80,6 +80,11 @@
 }
 .menu__open {
     padding-left: auto;
+    border: none;
+    background-color: #fff;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .mob-menu {
@@ -90,6 +95,9 @@
     min-height: 796px;
     background-color: #FFFFFF;
     top: 0;
+    @media screen and (min-width: 768px) {
+            display: none;
+}
     // padding-top: 48px;
     // padding-bottom: 48px;
     >.container {
@@ -100,11 +108,12 @@
         overflow: auto;
     }
 }
-
-
 .menu__close {
     display: block;
     margin-left: auto;
+    border: none;
+    background-color: #fff;
+    margin-top: 15px;
     // margin-bottom: 30px;
 }
 

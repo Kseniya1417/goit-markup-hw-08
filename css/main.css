@@ -182,6 +182,13 @@ img {
 
 .menu__open {
   padding-left: auto;
+  border: none;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .menu__open {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -193,6 +200,11 @@ img {
   background-color: #FFFFFF;
   top: 0;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .mob-menu > .container {
   display: flex;
   flex-direction: column;
@@ -203,6 +215,9 @@ img {
 .menu__close {
   display: block;
   margin-left: auto;
+  border: none;
+  background-color: #fff;
+  margin-top: 15px;
 }
 
 .mob-menu__item:not(:last-child) {
