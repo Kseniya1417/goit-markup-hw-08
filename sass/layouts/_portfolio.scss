@@ -67,7 +67,10 @@
     list-style: none;
 }
 .portfolio-link {
-    display: block;
+    // display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     outline: none;
     text-decoration: none;
     &:hover,
@@ -115,6 +118,7 @@
     padding: 20px 24px;
     border: 1px solid var(--section-team-baskground-color);
     border-top: 0;
+    flex-grow: 1;
 }
 .section-title {
     @include font (700, 18, 2.0, 0.06);

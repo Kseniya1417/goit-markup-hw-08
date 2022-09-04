@@ -870,6 +870,18 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: px;
+    height: px;
+  }
+}
 
 .form__btn-close {
   position: absolute;
@@ -1178,7 +1190,9 @@ img {
 }
 
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   outline: none;
   text-decoration: none;
 }
@@ -1232,6 +1246,7 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--section-team-baskground-color);
   border-top: 0;
+  flex-grow: 1;
 }
 
 .section-title {
