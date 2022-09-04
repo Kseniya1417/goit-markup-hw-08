@@ -14,16 +14,13 @@
     margin-bottom: 30px;
 }
 .team__list {
-    // margin: -15px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     width: 100%;
 }
 .team__item {
-    // margin: 15px;
-    // flex-basis: calc(100%/4 - 30px);
-    background-color: var(--main-text-color);
+     background-color: var(--main-text-color);
     width: 100%;
             @media screen and (min-width: 768px) {
                 width: calc((100% - 30px)/2);
@@ -38,12 +35,7 @@
 }
 .team__worker {
     @include font (500, 16, 1.18, 0.03);
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 1.18;
-    // letter-spacing: 0.03em;
-    
-    text-align: center;
+     text-align: center;
     color: var(--first-color);
     margin-bottom: 10px;
 }

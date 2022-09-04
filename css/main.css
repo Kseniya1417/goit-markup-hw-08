@@ -662,7 +662,14 @@ img {
 }
 
 .work {
+  display: none;
   padding-bottom: 94px;
+  padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work__title {
@@ -706,6 +713,13 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-text-color);
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  align-items: center;
+  justify-content: center;
 }
 
 .social {
@@ -779,8 +793,12 @@ img {
   letter-spacing: 0.03em;
   font-family: "Roboto";
   font-style: normal;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .client__list {
@@ -794,6 +812,7 @@ img {
   width: 170px;
   height: 92px;
   border: 1px solid var(--border-basic-color);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -810,6 +829,25 @@ img {
 .client__item .client__page {
   fill: var(--border-basic-color);
   transition-property: fill;
+}
+
+.client__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .backdrop {

@@ -1,12 +1,15 @@
 .work {
+    display: none;
     padding-bottom: 94px;
+    padding-top: 0;
+        
+        @media screen and (min-width: 1200px) {
+                display: block;
+            }
+        
 }
 .work__title {
     @include font (700, 36, 1.16, 0.03);
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    // letter-spacing: 0.03em;
     color: var(--first-color);
     margin-bottom: 50px;
     text-align: center;
@@ -16,7 +19,7 @@
     display: flex;
     gap: 30px;
     align-items: center;
-}
+  }
 .work__item {
     align-items: center;
     position: relative;
@@ -33,11 +36,14 @@
 }
 .work__article {
     @include font (700, 14, 1.14, 0.03);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
     text-align: center;
     text-transform: uppercase;
     color: var(--main-text-color);
-}
+    display: flex;
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        bottom: 0px;   
+        align-items: center;
+        justify-content: center;
+    }
