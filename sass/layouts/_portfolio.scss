@@ -79,10 +79,10 @@
         }
 }
 .card-set {
-    margin: -15px;
-    display: flex;
-    flex-wrap: wrap;
-    outline: none;
+    // margin: -15px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // outline: none;
 }
 .card-item {
     position: relative;
@@ -139,12 +139,8 @@
     border-radius: 4px;
     padding-left: 16px;
     background-color: transparent;
-    // font-weight: 400;
-    // font-size: 16px;
-    // line-height: 1.25;
     display: flex;
     align-items: center;
-    // letter-spacing: 0.03em;
     color: var(--footer-link-color);
 }
 .submit-btn {
@@ -154,13 +150,9 @@
     background: var(--third-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.87;
     display: flex;
     align-items: center;
     text-align: center;
-    // letter-spacing: 0.06em;
     color: var(--main-text-color);
     padding: 5px 15px;
     margin-left: 12px;

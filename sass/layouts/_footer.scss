@@ -1,9 +1,12 @@
 .footer {
     background-color: var(--footer-background-color);
     padding: 60px 0;
+    text-align: center;
     .container {
-            display: flex;
+            // display: flex;
             align-items: baseline;
+            flex-wrap: wrap;
+    
         }
 }
 .footer__logo {
@@ -17,11 +20,8 @@
 }
 .footer__logo-span {
     @include font (700, 26, 1.19, 0.03);
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    // letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-bottom: 20px;
 }
 .footer__address {
     font-style: normal;
@@ -33,6 +33,10 @@
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     margin-bottom: 9px;
+}
+.footer__list {
+    text-align: center;
+    margin-bottom: 89px;
 }
 .footer__item {
     list-style: none;
@@ -58,14 +62,13 @@
     @include font (700, 14, 1.14, 0.03);
     font-family: 'Roboto';
     font-style: normal;
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
     margin-bottom: 20px;
 }
-.footer-add {
-  margin-left: 70px;  
+// .footer-add {
+//   margin-left: 70px;  
+// }
+.footer-add__list {
+    margin-bottom: 60px;
 }

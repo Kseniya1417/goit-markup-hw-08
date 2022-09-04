@@ -321,7 +321,6 @@ img {
 }
 
 .contacts__tel {
-  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -334,7 +333,6 @@ img {
 }
 
 .contacts__post {
-  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -1087,21 +1085,6 @@ img {
   margin-bottom: 20px;
 }
 
-.form-submit {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-text-color);
-  display: inline-block;
-  margin-bottom: 12px;
-}
-
 .link,
 .svg-animation,
 .btn-animation {
@@ -1198,13 +1181,6 @@ img {
 }
 .portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.card-set {
-  margin: -15px;
-  display: flex;
-  flex-wrap: wrap;
-  outline: none;
 }
 
 .card-item {
@@ -1304,10 +1280,11 @@ img {
 .footer {
   background-color: var(--footer-background-color);
   padding: 60px 0;
+  text-align: center;
 }
 .footer .container {
-  display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .footer__logo {
@@ -1325,6 +1302,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 20px;
 }
 
 .footer__address {
@@ -1338,6 +1316,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-bottom: 9px;
+}
+
+.footer__list {
+  text-align: center;
+  margin-bottom: 89px;
 }
 
 .footer__item {
@@ -1375,8 +1358,8 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-add {
-  margin-left: 70px;
+.footer-add__list {
+  margin-bottom: 60px;
 }
 
 .footer-submit-field {
@@ -1384,7 +1367,22 @@ img {
 }
 
 .footer-form {
-  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-submit {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .form-submit__input {
@@ -1403,6 +1401,7 @@ img {
   display: flex;
   align-items: center;
   color: var(--footer-link-color);
+  margin-bottom: 20px;
 }
 
 .form-submit__btn {
