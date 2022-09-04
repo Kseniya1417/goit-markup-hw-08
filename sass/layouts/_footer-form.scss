@@ -23,14 +23,14 @@
 .form-submit__input {
     @include font (400, 16, 1.25, 0.03);
     box-sizing: border-box;
-    width: 358px;
+    width: calc(100% - 30px);
     height: 50px;
     border: 1px solid var(--submit-input-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
     background-color: transparent;
-    display: flex;
+    // display: flex;
     align-items: center;
     color: var(--footer-link-color);
     margin-bottom: 20px;
@@ -42,7 +42,7 @@
     background: var(--third-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    display: flex;
+    // display: flex;
     align-items: center;
     text-align: center;
     color: var(--main-text-color);
