@@ -1,9 +1,19 @@
 .contacts__list {
-    display: flex;
-    gap: 50px;
+    // display: flex;
+    // gap: 50px;
     margin-right: 0;
     align-items: center;
     display: none;
+    @media screen  and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+         @media screen and (min-width: 1200px) {
+             display: flex;
+             flex-direction: row;
+             gap: 50px;
+         }
 }
 
 .contacts__tel {

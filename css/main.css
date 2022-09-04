@@ -337,11 +337,23 @@ img {
 }
 
 .contacts__list {
-  display: flex;
-  gap: 50px;
   margin-right: 0;
   align-items: center;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .contacts__tel {
@@ -719,7 +731,7 @@ img {
 
 .work__backdrop {
   background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
+  width: 360px;
   height: 70px;
   position: absolute;
   bottom: 0;

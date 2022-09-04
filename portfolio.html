@@ -18,19 +18,22 @@
   </head>
   <body>
     <header class="header container-border">
-      <div class="container container__flex">
+      
+            <div class="container container__flex">
         <nav class="navigation">
           <a lang="en" href="./index.html" class="navigation__logo no-decoration-link"
             >Web<span class="span__logo">Studio</span></a
           >
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link link no-decoration-link">Студия</a>
+              <a
+                href="./index.html"
+                class="navigation__link link no-decoration-link"
+                >Студия</a
+              >
             </li>
             <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link link no-decoration-link current-page active"
+              <a href="./portfolio.html" class="navigation__link link no-decoration-link current-page active"
                 >Портфолио</a
               >
             </li>
@@ -52,13 +55,82 @@
             <li class="contacts__item">
               <a href="tel:+380961111111" class="contacts__tel no-decoration-link link">
                 <svg class="contacts__icon-telephone" width="10" height="16">
-                  <use href="./images/icons.svg#telephone"></use></svg
-                >+38 096 111 11 11</a
+                  <use href="./images/icons.svg#telephone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
         </div>
+        <button class="menu__open" type="button">
+            <svg class="menu__icon svg-animation" width="40" height="40">
+                <use href="./images/icons.svg#menu-open"></use>
+                        </svg>
+        </button>
       </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu__top"></div>
+          <button class="menu__close" type="button">
+                <svg class="menu__icon svg-animation" width="40" height="40">
+                          <use href="./images/icons.svg#menu-close"></use>
+                        </svg>
+          </button>
+          <nav class="mob-menu__nav">
+            <!-- <a lang="en" href="./index.html" class="navigation__logo no-decoration-link"
+              >Web<span class="span__logo">Studio</span></a
+            > -->
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link link no-decoration-link active"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link link no-decoration-link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link no-decoration-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mob-menu__button">
+          <div class="mob-contacts">
+            <ul class="mob-contacts__list list">
+              <li class="mob-contacts__item">
+                <a href="tel:+380961111111" class="mob-contacts__tel no-decoration-link link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts__post no-decoration-link link"
+                >info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="mob-social__list">
+            <li class="mob-social__item">
+              <a href="#" class="mob-social__link">Instagram</a>
+            </li>
+            <li class="mob-social__item">
+              <a href="#" class="mob-social__link">Twitter</a>
+            </li>
+            <li class="mob-social__item">
+              <a href="#" class="mob-social__link">Facebook</a>
+            </li>
+            <li class="mob-social__item">
+              <a href="#" class="mob-social__link">LinkedIn</a>
+            </li>
+          </ul>
+           </div>
+        </div>
+      </div>
+       </div>
+       </div>
     </header>
     <main>
       <section class="portfolio-section">
@@ -469,5 +541,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
