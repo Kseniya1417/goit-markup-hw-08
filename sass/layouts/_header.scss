@@ -41,7 +41,9 @@
      gap: 50px;
      display: flex;
      margin-left: 93px;
-     display: none;
+     @media screen and (max-width: 767px) {
+        display: none;
+     }
 
  }
  .navigation__link:hover,
@@ -72,6 +74,9 @@
 }
 .contacts__list{
     padding: 32px 0;
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
 }
 .menu__open {
     padding-left: auto;

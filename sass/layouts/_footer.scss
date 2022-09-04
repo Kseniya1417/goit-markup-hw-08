@@ -5,10 +5,8 @@
     .container {
             // display: flex;
             align-items: baseline;
-            flex-wrap: wrap;
-    
+            flex-wrap: wrap;}
         }
-}
 .footer__logo {
     @include font (700, 26, 1.19, 0.03);
     font-family: 'Raleway', sans-serif;
@@ -23,11 +21,11 @@
     color: var(--main-text-color);
     margin-bottom: 20px;
 }
-.footer-logo-contacts {
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
-}
+// .footer-logo-contacts {
+//     @media screen and (min-width: 768px) {
+//         display: flex;
+//     }
+// }
 .footer__address {
     font-style: normal;
     margin-top: 20px;
@@ -76,4 +74,13 @@
 // }
 .footer-add__list {
     margin-bottom: 60px;
+}
+.footer-contacts-add {
+   @media screen and (min-width: 768px) {
+       display: flex;
+       justify-content: space-around;
+   }
+   @media screen and (min-width: 1200px) {
+       
+   }
 }

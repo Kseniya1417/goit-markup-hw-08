@@ -133,7 +133,11 @@ img {
   gap: 50px;
   display: flex;
   margin-left: 93px;
-  display: none;
+}
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .navigation__link:hover,
@@ -169,6 +173,11 @@ img {
 
 .contacts__list {
   padding: 32px 0;
+}
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: none;
+  }
 }
 
 .menu__open {
@@ -1305,12 +1314,6 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-logo-contacts {
-    display: flex;
-  }
-}
-
 .footer__address {
   font-style: normal;
   margin-top: 20px;
@@ -1368,12 +1371,26 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-contacts-add {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .footer-submit-field {
   margin-left: auto;
 }
 
 .footer-form {
   flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
 }
 
 .form-submit {
@@ -1402,11 +1419,16 @@ img {
   border: 1px solid var(--submit-input-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-left: 16px;
   background-color: transparent;
   align-items: center;
   color: var(--footer-link-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .form-submit__input {
+    width: 450px;
+    height: 50px;
+  }
 }
 
 .form-submit__btn {
