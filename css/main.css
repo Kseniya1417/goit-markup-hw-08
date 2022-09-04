@@ -807,10 +807,10 @@ img {
   gap: 30px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .client__link {
-  width: 170px;
   height: 92px;
   border: 1px solid var(--border-basic-color);
   border-radius: 4px;
