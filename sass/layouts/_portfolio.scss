@@ -65,6 +65,13 @@
 }
 .section-item {
     list-style: none;
+    @media screen and (max-width: 767px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (max-width: 1200px) {
+            width: calc((100% - 60px) / 3);
+        }
 }
 .portfolio-link {
     // display: block;

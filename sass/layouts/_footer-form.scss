@@ -1,4 +1,7 @@
 .footer-submit-field {
+    @media screen and (min-width: 1200px) {
+            margin-left: auto;
+        }
     margin-left: auto;
 }
 .footer-form {
@@ -9,8 +12,10 @@
            align-content: center;
            align-items: center;
         }
+                 @media screen and (min-width: 1200px) {
+                     display: flex;
+                 }
 }
-
 .form-submit {
     @include font (700, 14, 1.14, 0.03);
     font-weight: 700;
