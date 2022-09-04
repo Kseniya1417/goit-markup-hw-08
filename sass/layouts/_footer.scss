@@ -2,12 +2,16 @@
     background-color: var(--footer-background-color);
     padding: 60px 0;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
     .container {
             // display: flex;
             align-items: baseline;
             flex-wrap: wrap;
             @media screen and (min-width: 1200px) {
                     display: flex; 
+                    padding: 0 30px;
             }    
         }
     }
@@ -40,6 +44,10 @@
 .footer__list {
     text-align: center;
     margin-bottom: 89px;
+    @media screen  and (min-width: 1200px) {
+        text-align: start;
+        margin-bottom: 0px;
+    }
 }
 .footer__item {
     list-style: none;
@@ -69,9 +77,11 @@
     color: var(--main-text-color);
     margin-bottom: 20px;
 }
-// .footer-add {
-//   margin-left: 70px;  
-// }
+.footer-add {
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;  
+    }
+}
 .footer-add__list {
     margin-bottom: 60px;
 }
