@@ -89,7 +89,24 @@
             <li class="section-item card-item">
               <a href="" class="portfolio-link link">
                 <div class="card-top-text">
-                  <img src="./images/img_1_portfolio.jpg" alt="foto 1" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/card1-desktop1x.jpg 1x, ./images/card2-desktop2x.jpg 2x"
+                      media="min-width: 1200px"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/card1-tablet1x.jpg 1x, ./images/card2-tablet2x.jpg 2x"
+                      media="min-width: 768px"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/card1-mobil1x.jpg 1x, ./images/card2-mobil2x.jpg 2x"
+                      media="min-width: 480px"
+                      type="image/jpg"
+                    />
+                    <img src="./images/card1-mobile1x.jpg" alt="foto 1" width="370" height="294" />
+                  </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компінію чи

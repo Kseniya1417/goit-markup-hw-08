@@ -5,8 +5,15 @@
     list-style: none;
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
     margin-bottom: 50px;
-    justify-content: center;
+    // justify-content: center;
+    @media screen  and (min-width: 480px) {
+        justify-content: center;
+    }
+    @media screen  and  (min-width: 768px) {
+        flex-wrap: nowrap;
+    }
 }
 .portfolio-section-item {
     font-family: inherit;
@@ -38,6 +45,24 @@
         transition-property: box-shadow, color, background-color;
     }
 }
+
+.section-list {
+    display: block;
+    margin-top: 40px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        // gap: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+        justify-content: left;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
+}
 .section-item {
     list-style: none;
 }
@@ -65,10 +90,6 @@
 }
 .card-article {
     @include font (400, 18, 1.55, 0.03);
-    // font-weight: 400;
-    // font-size: 18px;
-    // line-height: 1.55;
-    // letter-spacing: 0.03em;
     color: var(--main-text-color);
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
@@ -97,11 +118,7 @@
 }
 .section-title {
     @include font (700, 18, 2.0, 0.06);
-    // font-weight: 700;
-    // font-size: 18px;
-    // line-height: 2.0;
-    // letter-spacing: 0.06em;
-    color: var(--first-color);
+      color: var(--first-color);
 }
 .section-text {
     line-height: 1.88;
