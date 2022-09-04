@@ -835,11 +835,6 @@ img {
 .client__item {
   width: calc((100% - 30px) / 2);
 }
-@media screen and (min-width: 480px) {
-  .client__item {
-    width: 210px;
-  }
-}
 @media screen and (min-width: 768px) {
   .client__item {
     width: calc((100% - 60px) / 3);
