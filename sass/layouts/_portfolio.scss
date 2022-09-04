@@ -57,7 +57,6 @@
     }
     @media screen and (min-width: 768px) {
         margin-top: 30px;
-        justify-content: left;
     }
     @media screen and (min-width: 1200px) {
         margin-top: 50px;
@@ -65,13 +64,6 @@
 }
 .section-item {
     list-style: none;
-    @media screen and (max-width: 767px) {
-            width: calc((100% - 30px) / 2);
-        }
-    
-        @media screen and (max-width: 1200px) {
-            width: calc((100% - 60px) / 3);
-        }
 }
 .portfolio-link {
     // display: block;
@@ -118,8 +110,15 @@
 .card-set {
 >.card-item {
     margin: 15px;
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: 100%;
+    @media screen and (min-width: 768px){
+        flex-basis: calc(100% / 2 - 30px);
+    }
+         @media screen and (min-width: 1200px) {
+             flex-basis: calc(100% / 3 - 60px);
+         }
 }
+
 }
 .portfolio-text-box {
     padding: 20px 24px;
