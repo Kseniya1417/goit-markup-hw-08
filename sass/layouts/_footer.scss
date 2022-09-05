@@ -6,7 +6,6 @@
         text-align: start;
     }
     .container {
-            // display: flex;
             align-items: baseline;
             flex-wrap: wrap;
             @media screen and (min-width: 1200px) {
@@ -25,11 +24,7 @@
     color: var(--main-text-color);
     margin-bottom: 20px;
 }
-// .footer-logo-contacts {
-//     @media screen and (min-width: 768px) {
-//         display: flex;
-//     }
-// }
+
 .footer__address {
     font-style: normal;
     margin-top: 20px;
