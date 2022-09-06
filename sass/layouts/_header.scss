@@ -54,12 +54,12 @@
 }
 
 .menu__open {
-    padding-left: auto;
     border: none;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-self: center;
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -78,6 +78,7 @@
     min-height: 796px;
     background-color: #FFFFFF;
     top: 0;
+    transition: visibility 250ms linear, opacity 250ms linear;
     @media screen and (min-width: 768px) {
             display: none;
 }
@@ -117,6 +118,9 @@
 
 .mob-menu__list{
     margin-bottom: 304px;
+}
+.mob-menu__nav {
+    flex-grow: 1;
 }
 .mob-contacts {
     margin-bottom: 64px;
