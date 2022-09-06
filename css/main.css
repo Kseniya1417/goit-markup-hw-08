@@ -1272,12 +1272,15 @@ img {
 }
 
 .section-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .section-list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
   }
 }
@@ -1317,9 +1320,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(104%);
+  transform: translateY(101%);
   transition: transform 250ms linear;
-  overflow-y: scroll;
+  height: 100%;
 }
 .card-item:hover .card-article {
   transform: translateY(0%);
@@ -1329,12 +1332,11 @@ img {
 }
 
 .card-set > .card-item {
-  margin: 15px;
   flex-basis: 100%;
 }
 @media screen and (min-width: 768px) {
   .card-set > .card-item {
-    flex-basis: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
