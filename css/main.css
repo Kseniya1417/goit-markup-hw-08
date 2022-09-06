@@ -203,6 +203,7 @@ img {
   flex-direction: column;
   height: 100%;
   overflow: auto;
+  padding: 40px;
 }
 
 .menu__close {
