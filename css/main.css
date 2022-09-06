@@ -1220,7 +1220,7 @@ img {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 480px) {
   .portfolio-section-list {
@@ -1230,11 +1230,13 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-section-list {
     flex-wrap: nowrap;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-section-list {
     flex-wrap: nowrap;
+    margin-bottom: 50px;
   }
 }
 
@@ -1271,23 +1273,12 @@ img {
 
 .section-list {
   display: block;
-  margin-top: 40px;
 }
 @media screen and (min-width: 768px) {
   .section-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section-list {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-list {
-    margin-top: 50px;
   }
 }
 
@@ -1328,6 +1319,7 @@ img {
   left: 0;
   transform: translateY(104%);
   transition: transform 250ms linear;
+  overflow-y: scroll;
 }
 .card-item:hover .card-article {
   transform: translateY(0%);
