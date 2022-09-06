@@ -1202,7 +1202,17 @@ img {
 }
 
 .portfolio-section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-section {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding: 94px 0;
+  }
 }
 
 .portfolio-section-list {
@@ -1218,6 +1228,11 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
+  .portfolio-section-list {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
   .portfolio-section-list {
     flex-wrap: nowrap;
   }

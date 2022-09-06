@@ -1,5 +1,11 @@
 .portfolio-section {
-    padding: 94px 0;
+    padding: 60px 0;
+        @media screen and (min-width: 480px) {
+                justify-content: center;
+            }
+            @media screen and (min-width: 1200px) {
+                padding: 94px 0;
+            }
 }
 .portfolio-section-list {
     list-style: none;
@@ -13,6 +19,9 @@
     @media screen  and  (min-width: 768px) {
         flex-wrap: nowrap;
     }
+           @media screen and (min-width: 1200px) {
+               flex-wrap: nowrap;
+           }
 }
 .portfolio-section-item {
     font-family: inherit;
