@@ -10,6 +10,7 @@
             flex-wrap: wrap;
             @media screen and (min-width: 1200px) {
                     display: flex; 
+                    align-items: baseline;
                     padding: 0 30px;
             }    
         }
@@ -18,16 +19,34 @@
     @include font (700, 26, 1.19, 0.03);
     font-family: 'Raleway', sans-serif;
     color: var(--third-color);
+    display: inline-block;
+    margin-bottom: 20px;
 }
 .footer__logo-span {
     @include font (700, 26, 1.19, 0.03);
     color: var(--main-text-color);
-    margin-bottom: 20px;
 }
 
 .footer__address {
     font-style: normal;
-    margin-top: 20px;
+    // margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+@include tablet {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: center;
+        margin-bottom: 0px;
+}
+@include desktop {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+}
 }
 .footer__text {
     font-size: 14px;
@@ -38,15 +57,24 @@
 }
 .footer__list {
     text-align: center;
-    margin-bottom: 89px;
-    @media screen  and (min-width: 1200px) {
-        text-align: start;
-        margin-bottom: 0px;
-    }
+    // margin-bottom: 89px;
+//          @include tablet {
+//         margin-bottom: 96px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         @include desktop {
+//                 padding-left: 0;
+//                 margin-bottom: 0px;
+//                 align-content: flex-start;
+//                 display: flex;
+//                 flex-direction: column;
+//             }
+// }
 }
 .footer__item {
     list-style: none;
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
 }
 .footer__post {
     font-style: normal;
@@ -55,6 +83,14 @@
     letter-spacing: 0.03em;
     color: var(--footer-link-color);
     transition-property: color;
+    @include tablet {
+            // margin-bottom: 8px;
+            padding: 0;
+        }
+    @include desktop {
+            // margin-bottom: 9px;
+            padding: 0;
+        }
 }
 .footer__tel {
     font-style: normal;
@@ -63,6 +99,14 @@
     letter-spacing: 0.03em;
     color: var(--footer-link-color);
     transition-property: color;
+    @include tablet {
+            // margin-bottom: 9px;
+            padding: 0;
+        }
+        @include desktop {
+            // margin-bottom: 9px;
+            padding: 0;
+        }
 }
 .footer-add__title {
     @include font (700, 14, 1.14, 0.03);
@@ -77,16 +121,19 @@
         margin-left: 70px;  
     }
 }
-.footer-add__list {
-    margin-bottom: 60px;
-}
+// .footer-add__list {
+//     margin-bottom: 60px;
+// }
 .footer-contacts-add {
+    margin-bottom: 60px;
    @media screen and (min-width: 768px) {
        display: flex;
        justify-content: space-around;
+     margin-bottom: 60px;
 }
   @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: flex-start;
+      margin-bottom: 0;
   }
 }

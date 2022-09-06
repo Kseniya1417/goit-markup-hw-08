@@ -12,6 +12,13 @@
     color: var(--first-color);
     margin-bottom: 10px;
     text-align: center;
+    @include tablet {
+            text-align: left;
+        }
+    
+        @include desktop {
+            text-align: left;;
+        }
 }
 .features__text {
     @include font (400, 14, 1.71, 0.03);

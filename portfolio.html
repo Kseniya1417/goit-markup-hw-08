@@ -18,22 +18,19 @@
   </head>
   <body>
     <header class="header container-border">
-      
-            <div class="container container__flex">
+      <div class="container container__flex">
         <nav class="navigation">
           <a lang="en" href="./index.html" class="navigation__logo no-decoration-link"
             >Web<span class="span__logo">Studio</span></a
           >
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a
-                href="./index.html"
-                class="navigation__link link no-decoration-link"
-                >Студия</a
-              >
+              <a href="./index.html" class="navigation__link link no-decoration-link">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link no-decoration-link current-page active"
+              <a
+                href="./portfolio.html"
+                class="navigation__link link no-decoration-link current-page active"
                 >Портфолио</a
               >
             </li>
@@ -63,18 +60,18 @@
           </ul>
         </div>
         <button class="menu__open" type="button">
-            <svg class="menu__icon svg-animation" width="40" height="40">
-                <use href="./images/icons.svg#menu-open"></use>
-                        </svg>
+          <svg class="menu__icon svg-animation" width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
         </button>
       </div>
       <div class="mob-menu is-hidden">
         <div class="container">
           <div class="mob-menu__top"></div>
           <button class="menu__close" type="button">
-                <svg class="menu__icon svg-animation" width="40" height="40">
-                          <use href="./images/icons.svg#menu-close"></use>
-                        </svg>
+            <svg class="menu__icon svg-animation" width="40" height="40">
+              <use href="./images/icons.svg#menu-close"></use>
+            </svg>
           </button>
           <nav class="mob-menu__nav">
             <!-- <a lang="en" href="./index.html" class="navigation__logo no-decoration-link"
@@ -82,12 +79,12 @@
             > -->
             <ul class="mob-menu__list list">
               <li class="mob-menu__item">
-                <a href="./index.html" class="mob-menu__link link no-decoration-link"
-                  >Студия</a
-                >
+                <a href="./index.html" class="mob-menu__link link no-decoration-link">Студия</a>
               </li>
               <li class="mob-menu__item">
-                <a href="./portfolio.html" class="mob-menu__link link no-decoration-link current-page"
+                <a
+                  href="./portfolio.html"
+                  class="mob-menu__link link no-decoration-link current-page"
                   >Портфолио</a
                 >
               </li>
@@ -97,40 +94,39 @@
             </ul>
           </nav>
           <div class="mob-menu__button">
-          <div class="mob-contacts">
-            <ul class="mob-contacts__list list">
-              <li class="mob-contacts__item">
-                <a href="tel:+380961111111" class="mob-contacts__tel no-decoration-link link">
-                  +38 096 111 11 11</a
-                >
+            <div class="mob-contacts">
+              <ul class="mob-contacts__list list">
+                <li class="mob-contacts__item">
+                  <a href="tel:+380961111111" class="mob-contacts__tel no-decoration-link link">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mob-contacts__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-contacts__post no-decoration-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="mob-social__list">
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Instagram</a>
               </li>
-              <li class="mob-contacts__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="mob-contacts__post no-decoration-link link"
-                >info@devstudio.com</a>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Twitter</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">Facebook</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="#" class="mob-social__link">LinkedIn</a>
               </li>
             </ul>
           </div>
-          <ul class="mob-social__list">
-            <li class="mob-social__item">
-              <a href="#" class="mob-social__link">Instagram</a>
-            </li>
-            <li class="mob-social__item">
-              <a href="#" class="mob-social__link">Twitter</a>
-            </li>
-            <li class="mob-social__item">
-              <a href="#" class="mob-social__link">Facebook</a>
-            </li>
-            <li class="mob-social__item">
-              <a href="#" class="mob-social__link">LinkedIn</a>
-            </li>
-          </ul>
-           </div>
         </div>
       </div>
-       </div>
-       </div>
     </header>
     <main>
       <section class="portfolio-section">
@@ -164,20 +160,17 @@
                   <picture>
                     <source
                       srcset="./images/card1-desktop1x.jpg 1x, ./images/card1-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card1-tablet1x.jpg 1x, ./images/card1-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card1-mobil1x.jpg 1x, ./images/card1-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card1-mobile1x.jpg 1x, ./images/card1-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card1-mobile1x.jpg" alt="foto 1"  />
+                    <img src="./images/card1-mobile1x.jpg" alt="foto 1" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -197,20 +190,17 @@
                   <picture>
                     <source
                       srcset="./images/card2-desktop1x.jpg 1x, ./images/card2-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card2-tablet1x.jpg 1x, ./images/card2-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card2-mobil1x.jpg 1x, ./images/card2-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card2-mobile1x.jpg 1x, ./images/card2-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card2-mobile1x.jpg" alt="foto 1"  />
+                    <img src="./images/card2-mobile1x.jpg" alt="foto 2" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -232,20 +222,17 @@
                   <picture>
                     <source
                       srcset="./images/card3-desktop1x.jpg 1x, ./images/card3-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card3-tablet1x.jpg 1x, ./images/card3-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card3-mobil1x.jpg 1x, ./images/card3-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card3-mobile1x.jpg 1x, ./images/card3-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card3-mobile1x.jpg" alt="foto 1" />
+                    <img src="./images/card3-mobile1x.jpg" alt="foto 3" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -265,20 +252,17 @@
                   <picture>
                     <source
                       srcset="./images/card4-desktop1x.jpg 1x, ./images/card4-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card4-tablet1x.jpg 1x, ./images/card4-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card4-mobil1x.jpg 1x, ./images/card4-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card4-mobile1x.jpg 1x, ./images/card4-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card4-mobile1x.jpg" alt="foto 1" />
+                    <img src="./images/card4-mobile1x.jpg" alt="foto 4" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -298,20 +282,17 @@
                   <picture>
                     <source
                       srcset="./images/card5-desktop1x.jpg 1x, ./images/card5-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card5-tablet1x.jpg 1x, ./images/card5-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card5-mobil1x.jpg 1x, ./images/card5-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card5-mobile1x.jpg 1x, ./images/card5-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card5-mobile1x.jpg" alt="foto 1"  />
+                    <img src="./images/card5-mobile1x.jpg" alt="foto 5" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -331,20 +312,17 @@
                   <picture>
                     <source
                       srcset="./images/card6-desktop1x.jpg 1x, ./images/card6-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card6-tablet1x.jpg 1x, ./images/card6-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card6-mobil1x.jpg 1x, ./images/card6-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card6-mobile1x.jpg 1x, ./images/card6-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card6-mobile1x.jpg" alt="foto 1"  />
+                    <img src="./images/card6-mobile1x.jpg" alt="foto 6" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -364,20 +342,17 @@
                   <picture>
                     <source
                       srcset="./images/card7-desktop1x.jpg 1x, ./images/card7-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card7-tablet1x.jpg 1x, ./images/card7-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card7-mobil1x.jpg 1x, ./images/card7-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card7-mobile1x.jpg 1x, ./images/card7-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card7-mobile1x.jpg" alt="foto 1"  />
+                    <img src="./images/card7-mobile1x.jpg" alt="foto 7" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -397,20 +372,17 @@
                   <picture>
                     <source
                       srcset="./images/card8-desktop1x.jpg 1x, ./images/card8-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card8-tablet1x.jpg 1x, ./images/card8-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card8-mobil1x.jpg 1x, ./images/card8-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card8-mobile1x.jpg 1x, ./images/card8-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card8-mobile2x.jpg" alt="foto 1"  />
+                    <img src="./images/card8-mobile1x.jpg" alt="foto 8" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -430,20 +402,17 @@
                   <picture>
                     <source
                       srcset="./images/card9-desktop1x.jpg 1x, ./images/card9-desktop2x.jpg 2x"
-                      media="min-width: 1200px"
-                      type="image/jpg"
+                      media="(min-width: 1200px)"
                     />
                     <source
                       srcset="./images/card9-tablet1x.jpg 1x, ./images/card9-tablet2x.jpg 2x"
-                      media="min-width: 768px"
-                      type="image/jpg"
+                      media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/card9-mobil1x.jpg 1x, ./images/card9-mobil2x.jpg 2x"
-                      media="min-width: 480px"
-                      type="image/jpg"
+                      srcset="./images/card9-mobile1x.jpg 1x, ./images/card9-mobile2x.jpg 2x"
+                      media="(max-width: 767px)"
                     />
-                    <img src="./images/card9-mobile2x.jpg" alt="foto 1"  />
+                    <img src="./images/card9-mobile1x.jpg" alt="foto 9" />
                   </picture>
                   <p class="card-article">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.

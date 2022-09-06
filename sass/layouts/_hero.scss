@@ -35,10 +35,9 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            max-width: 1200px;
+            max-width: 1600px;
             height: 600px;
             margin: auto;
-            margin-bottom: 30px;
             padding: 200px;
             @include retina{
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop2x.jpg);

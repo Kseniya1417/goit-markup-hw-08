@@ -96,8 +96,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(101%);
+    transform: translateY(104%);
     transition: transform 250ms linear;
+    // overflow-y: scroll;
     .card-item:hover & {
             transform: translateY(0%);
         }
@@ -110,13 +111,12 @@
     margin: 15px;
     flex-basis: 100%;
     @media screen and (min-width: 768px){
-        flex-basis: calc(100% / 2 - 30px);
+        flex-basis: calc((100% - 30px)/2);
     }
          @media screen and (min-width: 1200px) {
-             flex-basis: calc(100% / 3 - 60px);
+             flex-basis: calc((100% - 60px)/3);
          }
 }
-
 }
 .portfolio-text-box {
     padding: 20px 24px;
